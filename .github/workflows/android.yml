@@ -17,6 +17,12 @@ jobs:
         java-version: '17'
         distribution: 'temurin'
 
+    - name: Prepare Web Assets Directory
+      run: |
+        mkdir -p www
+        cp index.html www/ 2>/dev/null || true
+        cp -r assets www/ 2>/dev/null || true
+
     - name: Install Dependencies
       run: |
         npm install
