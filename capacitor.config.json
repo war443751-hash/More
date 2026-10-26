@@ -1,0 +1,6 @@
+{
+  "appId": "com.nabhan.noor",
+  "appName": "نور",
+  "webDir": "www",
+  "android": { "allowMixedContent": false }
+}
